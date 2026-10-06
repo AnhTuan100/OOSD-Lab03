@@ -1,9 +1,9 @@
 package arena.entity;
 
 /**
- * Thực thể đại diện cho người dùng có vai trò Người tổ chức giải (TournamentOrganizer).
+ * Thực thể đại diện cho người dùng có vai trò Người tổ chức giải (LeagueOwner).
  */
-public class TournamentOrganizer {
+public class LeagueOwner {
 
     private String username;
     private String fullName;
@@ -16,7 +16,7 @@ public class TournamentOrganizer {
      * @param fullName Họ và tên đầy đủ.
      * @param email    Địa chỉ email liên hệ.
      */
-    public TournamentOrganizer(String username, String fullName, String email) {
+    public LeagueOwner(String username, String fullName, String email) {
         this.username = username;
         this.fullName = fullName;
         this.email = email;

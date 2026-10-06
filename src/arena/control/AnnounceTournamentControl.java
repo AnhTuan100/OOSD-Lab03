@@ -1,9 +1,6 @@
 package arena.control;
 
-import arena.entity.Game;
-import arena.entity.Tournament;
-import arena.entity.TournamentOrganizer;
-import arena.entity.TournamentStyle;
+import arena.entity.*;
 
 import java.time.LocalDate;
 import java.util.ArrayList;
@@ -78,7 +75,7 @@ public class AnnounceTournamentControl {
     public Tournament announceTournament(String tournamentName,
                                          int gameIndex,
                                          int styleIndex,
-                                         TournamentOrganizer organizer,
+                                         LeagueOwner organizer,
                                          int maxParticipants,
                                          LocalDate startDate,
                                          LocalDate registrationDeadline) {

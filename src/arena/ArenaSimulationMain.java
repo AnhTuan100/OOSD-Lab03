@@ -2,7 +2,7 @@ package arena;
 
 import arena.boundary.AnnounceTournamentForm;
 import arena.control.AnnounceTournamentControl;
-import arena.entity.TournamentOrganizer;
+import arena.entity.LeagueOwner;
 
 import java.time.LocalDate;
 
@@ -10,7 +10,7 @@ import java.time.LocalDate;
  * Lớp điều khiển chương trình kiểm thử mô phỏng (Simulation Driver).
  *
  * Tái hiện lại chu trình kích hoạt Use Case "AnnounceTournament":
- * 1. Actor (TournamentOrganizer) mở form công bố giải đấu.
+ * 1. Actor (LeagueOwner) mở form công bố giải đấu.
  * 2. Form (Boundary) lấy các danh mục cấu hình từ Control để hiển thị.
  * 3. Actor nhập dữ liệu và submit.
  * 4. Control xác thực và tạo Tournament (Entity) với trạng thái ANNOUNCED.
@@ -22,8 +22,8 @@ public class ArenaSimulationMain {
         AnnounceTournamentControl control = new AnnounceTournamentControl();
         AnnounceTournamentForm boundaryForm = new AnnounceTournamentForm(control);
 
-        // Khởi tạo Actor: TournamentOrganizer đã đăng nhập vào hệ thống
-        TournamentOrganizer organizer = new TournamentOrganizer(
+        // Khởi tạo Actor: LeagueOwner đã đăng nhập vào hệ thống
+        LeagueOwner organizer = new LeagueOwner(
                 "alice_organizer",
                 "Alice Smith",
                 "alice@arena-tournaments.org"

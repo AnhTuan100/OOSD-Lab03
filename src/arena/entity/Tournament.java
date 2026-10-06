@@ -11,7 +11,7 @@ public class Tournament {
     private String name;
     private Game game;
     private TournamentStyle style;
-    private TournamentOrganizer organizer;
+    private LeagueOwner organizer;
     private int maxParticipants;
     private LocalDate startDate;
     private LocalDate registrationDeadline;
@@ -31,7 +31,7 @@ public class Tournament {
     public Tournament(String name,
                       Game game,
                       TournamentStyle style,
-                      TournamentOrganizer organizer,
+                      LeagueOwner organizer,
                       int maxParticipants,
                       LocalDate startDate,
                       LocalDate registrationDeadline) {
@@ -64,7 +64,7 @@ public class Tournament {
         return style;
     }
 
-    public TournamentOrganizer getOrganizer() {
+    public LeagueOwner getOrganizer() {
         return organizer;
     }
 

@@ -1,16 +1,13 @@
 package arena.boundary;
 
 import arena.control.AnnounceTournamentControl;
-import arena.entity.Game;
-import arena.entity.Tournament;
-import arena.entity.TournamentOrganizer;
-import arena.entity.TournamentStyle;
+import arena.entity.*;
 
 import java.time.LocalDate;
 import java.util.List;
 
 /**
- * Boundary Object mô phỏng giao diện tiếp nhận thông tin từ Actor TournamentOrganizer.
+ * Boundary Object mô phỏng giao diện tiếp nhận thông tin từ Actor LeagueOwner.
  *
  * Chịu trách nhiệm hiển thị các tùy chọn cấu hình từ Controller và chuyển lệnh
  * gửi yêu cầu công bố giải đấu xuống Controller.
@@ -61,7 +58,7 @@ public class AnnounceTournamentForm {
     public void submitAnnouncement(String name,
                                    int gameIndex,
                                    int styleIndex,
-                                   TournamentOrganizer organizer,
+                                   LeagueOwner organizer,
                                    int maxParticipants,
                                    LocalDate startDate,
                                    LocalDate registrationDeadline) {
